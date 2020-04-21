@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackerrank.github.requests.NoResourcesEventsControllerTest" tests="7" failures="0" errors="0" skipped="0" time="0.057">
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.findAllEvents" time="0.01" />
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.findAllEventsByNonExistingRepoIdAndNonExistingActorId" time="0.008" />
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.findAllEventsByNonExistingActorId" time="0.006" />
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.findAllEventsByNonExistingRepoId" time="0.007" />
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.findEventByNonExistingId" time="0.007" />
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.createEvent" time="0.012" />
+  <testcase classname="com.hackerrank.github.requests.NoResourcesEventsControllerTest" name="com.hackerrank.github.requests.NoResourcesEventsControllerTest.createEventWithExistingId" time="0.007" />
+</testsuite>
+

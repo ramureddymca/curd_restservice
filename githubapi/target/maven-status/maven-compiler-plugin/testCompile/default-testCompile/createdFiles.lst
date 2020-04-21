@@ -1,0 +1,4 @@
+com\hackerrank\github\TestSuite.class
+com\hackerrank\github\requests\EventsControllerTest.class
+com\hackerrank\github\requests\ResourcesControllerTest.class
+com\hackerrank\github\requests\NoResourcesEventsControllerTest.class

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.hackerrank.github.requests.EventsControllerTest" tests="13" failures="1" errors="0" skipped="0" time="0.154">
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.createEvent" time="0.036" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.createEventWithExistingId" time="0.009" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findEventById" time="0.012" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findEventByNonExistingId" time="0.007" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByRepoId" time="0.01" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByNonExistingRepoId" time="0.007" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByActorId" time="0.01" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByNonExistingActorId" time="0.005" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByRepoIdAndActorId" time="0.025">
+    <failure>java.lang.AssertionError: Status expected:&lt;200&gt; but was:&lt;404&gt;&#xD;
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:55)&#xD;
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:82)&#xD;
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:619)&#xD;
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:195)&#xD;
+	at com.hackerrank.github.requests.EventsControllerTest.findAllEventsByRepoIdAndActorId(EventsControllerTest.java:474)&#xD;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#xD;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xD;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#xD;
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)&#xD;
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)&#xD;
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)&#xD;
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)&#xD;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)&#xD;
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)&#xD;
+	at org.springframework.test.context.junit4.statements.RunPrepareTestInstanceCallbacks.evaluate(RunPrepareTestInstanceCallbacks.java:64)&#xD;
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)&#xD;
+	at org.springframework.test.context.junit4.statements.SpringFailOnTimeout.evaluate(SpringFailOnTimeout.java:87)&#xD;
+	at org.springframework.test.context.junit4.statements.ProfileValueChecker.evaluate(ProfileValueChecker.java:103)&#xD;
+	at org.junit.rules.TestWatcher$1.evaluate(TestWatcher.java:55)&#xD;
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#xD;
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)&#xD;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)&#xD;
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)&#xD;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#xD;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#xD;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#xD;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#xD;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#xD;
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)&#xD;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#xD;
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)&#xD;
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)&#xD;
+	at org.springframework.test.context.junit4.statements.ProfileValueChecker.evaluate(ProfileValueChecker.java:103)&#xD;
+	at org.springframework.test.context.junit4.rules.SpringClassRule$TestContextManagerCacheEvictor.evaluate(SpringClassRule.java:190)&#xD;
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)&#xD;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#xD;
+	at org.junit.runners.Suite.runChild(Suite.java:128)&#xD;
+	at org.junit.runners.Suite.runChild(Suite.java:27)&#xD;
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)&#xD;
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)&#xD;
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)&#xD;
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)&#xD;
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)&#xD;
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)&#xD;
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)&#xD;
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)&#xD;
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)&#xD;
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)&#xD;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#xD;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)&#xD;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#xD;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)&#xD;
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)&#xD;
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)&#xD;
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)&#xD;
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)&#xD;
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)</failure>
+  </testcase>
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByNonExistingRepoIdAndNonExistingActorId" time="0.007" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByNonExistingRepoIdAndActorId" time="0.006" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEventsByRepoIdAndNonExistingActorId" time="0.007" />
+  <testcase classname="com.hackerrank.github.requests.EventsControllerTest" name="com.hackerrank.github.requests.EventsControllerTest.findAllEvents" time="0.013" />
+</testsuite>
+
